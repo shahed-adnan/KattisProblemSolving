@@ -16,17 +16,14 @@ int main()
             if(i==1)
             {
                 zusatz = (1/(pow(2,i-1)*pow(2,i-1)));
-                //cout<<"zusatz: "<<zusatz<<endl;
             }
             else if(i==2)
             {
                 zusatz = (1/(pow(2,i-1)*pow(2,i-1)))*4;
-                //cout<<"zusatzs: "<<zusatz<<endl;
             }
             else
             {
                 zusatz = 4 * pow(3,i-2) * (1/(pow(2,i-1)*pow(2,i-1)));
-                //cout<<"zusatzs: "<<zusatz<<endl;
             }
             area += pi*r*r*zusatz;
         }
