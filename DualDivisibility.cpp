@@ -5,7 +5,7 @@ using namespace std;
 long long int FindDivisors(long long int n, long long int m)
 {
     long long int cnt=0;
-    for (int i=1; i*i <= n; i++) // O(sqrt(n))
+    for (long long int i=1; i*i <= n; i++) // O(sqrt(n))
     {
         if(n%i==0)
         {
@@ -25,20 +25,6 @@ long long int FindDivisors(long long int n, long long int m)
 
 }
 
-/*
-int NumberOfDualDivisibility(long long int m)
-{
-    int cnt=0;
-    for(auto it=divisors.begin(); it != divisors.end(); it++)
-    {
-        if(*it % m ==0)
-        {
-            cnt++;
-        }
-    }
-    return cnt;
-}
-*/
 
 int main()
 {
